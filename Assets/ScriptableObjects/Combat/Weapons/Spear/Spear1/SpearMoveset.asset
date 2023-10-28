@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9144539315567566391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1aa8abbb41dcd3438fd20c10d485a22, type: 3}
+  m_Name: Combo Attack
+  m_EditorClassIdentifier: 
+  input: {fileID: 0}
+  combo:
+  - animation: {fileID: 0}
+    overrideDuration: 0
+    duration: 2
+    ignoreInputFor: 0
+    onHitEffect: {fileID: 0}
+  - animation: {fileID: 0}
+    overrideDuration: 0
+    duration: 2
+    ignoreInputFor: 0
+    onHitEffect: {fileID: 0}
+  validStates:
+  - Movement_Exploration
+  - Movement_Combat
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61f8f59fd891c2e4291afa26df9d1a43, type: 3}
+  m_Name: SpearMoveset
+  m_EditorClassIdentifier: 
+  components:
+  - {fileID: -9144539315567566391}
+  - {fileID: 6762566249619714703}
+  type: Override Animator
+--- !u!114 &6762566249619714703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfc54dea5e4bd6a489a5c4e019fbece6, type: 3}
+  m_Name: Override Animator
+  m_EditorClassIdentifier: 
+  input: {fileID: 0}
+  animatorOverride: {fileID: 0}
+  defaultWhenUnequipped: 1

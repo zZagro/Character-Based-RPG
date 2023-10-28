@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff06b432acfa80b418d7c1ad2d7469cc, type: 3}
+  m_Name: MainCharacter
+  m_EditorClassIdentifier: 
+  <CharacterName>k__BackingField: Buff
+  <CharacterDescription>k__BackingField: Just a very buff man
+  <CharacterRarity>k__BackingField: 5
+  <CharacterWeaponType>k__BackingField: 0
+  <PlayableCharacterStats>k__BackingField:
+    <Health>k__BackingField:
+      <StatType>k__BackingField: 0
+      <BaseValue>k__BackingField: 1000
+      <FlatModifier>k__BackingField: 0
+      <PercentageModifier>k__BackingField: 0
+    <Defense>k__BackingField:
+      <StatType>k__BackingField: 1
+      <BaseValue>k__BackingField: 50
+      <FlatModifier>k__BackingField: 0
+      <PercentageModifier>k__BackingField: 0
+    <CriticalHitChance>k__BackingField:
+      <StatType>k__BackingField: 2
+      <BaseValue>k__BackingField: 5
+      <FlatModifier>k__BackingField: 0
+      <PercentageModifier>k__BackingField: 0
+    <CriticalHitDamage>k__BackingField:
+      <StatType>k__BackingField: 3
+      <BaseValue>k__BackingField: 15
+      <FlatModifier>k__BackingField: 0
+      <PercentageModifier>k__BackingField: 0
+    <Luck>k__BackingField:
+      <StatType>k__BackingField: 4
+      <BaseValue>k__BackingField: 10
+      <FlatModifier>k__BackingField: 0
+      <PercentageModifier>k__BackingField: 0
+    <Attack>k__BackingField:
+      <StatType>k__BackingField: 5
+      <BaseValue>k__BackingField: 100
+      <FlatModifier>k__BackingField: 0
+      <PercentageModifier>k__BackingField: 0
+    <AttackSpeed>k__BackingField:
+      <StatType>k__BackingField: 6
+      <BaseValue>k__BackingField: 100
+      <FlatModifier>k__BackingField: 0
+      <PercentageModifier>k__BackingField: 0
+  <CharacterPrefab>k__BackingField: {fileID: 455169556646583524, guid: 506636d7c3a3c5a409e27432015f7c85,
+    type: 3}
+  <UISprite>k__BackingField: {fileID: 10915, guid: 0000000000000000f000000000000000,
+    type: 0}
