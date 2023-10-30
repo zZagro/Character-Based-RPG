@@ -14,21 +14,21 @@ public class PlayerAttackingState : PlayerGroundedState
 
         ResetVelocity();
 
-        StartAnimation(stateMachine.Player.AnimationData.AttackingParameterHash);
+        //StartAnimation(stateMachine.Player.AnimationData.AttackingParameterHash);
     }
 
     public override void Exit()
     {
         base.Exit();
 
-        StopAnimation(stateMachine.Player.AnimationData.AttackingParameterHash);
+        //StopAnimation(stateMachine.Player.AnimationData.AttackingParameterHash);
     }
 
     public override void Update()
     {
         base.Update();
 
-        if (stateMachine.ReusableData.MovementInput == Vector2.zero || stateMachine.Player.Animator.IsInTransition(0))
+        if (stateMachine.ReusableData.MovementInput == Vector2.zero)
         {
             return;
         }

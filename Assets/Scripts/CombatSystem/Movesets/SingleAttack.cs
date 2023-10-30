@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -11,8 +10,8 @@ namespace CombatSystem.Movesets
         public AnimationClip animation;
         [Tooltip("The state that will be run on the Animator to perform this attack.")]
         public string targetState = "Attack";
-        [Tooltip("The Animator must be in one of these states to allow attacking.")]
-        public List<string> validStates = new List<string> { "Movement_Exploration", "Movement_Combat" };
+        [Tooltip("The Animator must be in one of the states with this Tag to allow attacking.")]
+        public List<string> validStates = new List<string> { "Grounded" };
         public OnHitEffect onHitEffect;
 
         public override IMovesetBehavior GetBehavior()
@@ -97,11 +96,12 @@ namespace CombatSystem.Movesets
 
             var match = false;
 
-            foreach (var stateName in data.validStates)
+            foreach (var stateTag in data.validStates)
             {
-                if (state.IsName(stateName))
+                if (state.IsTag(stateTag))
                 {
                     match = true;
+                    Debug.Log("Is In Grounded State");
                     break;
                 }
             }

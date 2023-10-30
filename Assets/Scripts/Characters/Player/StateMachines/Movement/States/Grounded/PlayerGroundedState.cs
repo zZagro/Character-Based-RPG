@@ -80,7 +80,7 @@ public class PlayerGroundedState : PlayerMovementState
         base.AddInputActionsCallbacks();
 
         stateMachine.Player.Input.PlayerActions.Dash.started += OnDashStarted;
-        stateMachine.Player.Input.PlayerActions.Attack.performed += OnAttackStarted;
+        //stateMachine.Player.Input.PlayerActions.Attack.performed += OnAttackStarted;
     }
 
     protected override void RemoveInputActionsCallbacks()

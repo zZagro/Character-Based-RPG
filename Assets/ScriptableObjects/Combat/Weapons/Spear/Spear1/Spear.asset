@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: Spear
   description: 
-  prefab: {fileID: 0}
-  moveset: {fileID: 0}
+  prefab: {fileID: -8147432675849745514, guid: b7c927f9d6b8113439e15ca4457d4c2d, type: 3}
+  moveset: {fileID: 11400000, guid: 3c05d9c1405004b44973924f43f9e4f0, type: 2}

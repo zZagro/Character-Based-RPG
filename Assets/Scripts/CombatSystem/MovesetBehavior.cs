@@ -37,7 +37,7 @@ namespace CombatSystem
 
         protected virtual void OnInputPerformed(InputAction.CallbackContext obj)
         {
-
+            Debug.Log("Attack Performed");
         }
 
         protected virtual void OnInputCanceled(InputAction.CallbackContext obj)

@@ -1,32 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9144539315567566391
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1aa8abbb41dcd3438fd20c10d485a22, type: 3}
-  m_Name: Combo Attack
-  m_EditorClassIdentifier: 
-  input: {fileID: 0}
-  combo:
-  - animation: {fileID: 0}
-    overrideDuration: 0
-    duration: 2
-    ignoreInputFor: 0
-    onHitEffect: {fileID: 0}
-  - animation: {fileID: 0}
-    overrideDuration: 0
-    duration: 2
-    ignoreInputFor: 0
-    onHitEffect: {fileID: 0}
-  validStates:
-  - Movement_Exploration
-  - Movement_Combat
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40,9 +13,27 @@ MonoBehaviour:
   m_Name: SpearMoveset
   m_EditorClassIdentifier: 
   components:
-  - {fileID: -9144539315567566391}
   - {fileID: 6762566249619714703}
-  type: Override Animator
+  - {fileID: 5902422378764410124}
+  type: Single Attack
+--- !u!114 &5902422378764410124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7480a32ac60823f4ba6e49baf7ca7ee5, type: 3}
+  m_Name: Single Attack
+  m_EditorClassIdentifier: 
+  input: {fileID: -5634006336972766258, guid: 50606f9be8f2a6d42b683688ba03ed3e, type: 3}
+  animation: {fileID: 7400000, guid: 82d5b5f0c15f39540a67037f33d533b1, type: 3}
+  targetState: Attack
+  validStates:
+  - Grounded
+  onHitEffect: {fileID: 11400000, guid: 365f4c9210612654ba8b344551c84a78, type: 2}
 --- !u!114 &6762566249619714703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56,5 +47,5 @@ MonoBehaviour:
   m_Name: Override Animator
   m_EditorClassIdentifier: 
   input: {fileID: 0}
-  animatorOverride: {fileID: 0}
+  animatorOverride: {fileID: 22100000, guid: 28a153388ec732047a874f2bcf1b9815, type: 2}
   defaultWhenUnequipped: 1
